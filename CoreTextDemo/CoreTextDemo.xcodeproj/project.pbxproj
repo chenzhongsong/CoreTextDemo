@@ -15,6 +15,8 @@
 		268BD8801D40B66800345BF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268BD87F1D40B66800345BF4 /* Assets.xcassets */; };
 		268BD8831D40B66800345BF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268BD8811D40B66800345BF4 /* LaunchScreen.storyboard */; };
 		268BD8931D40B7DB00345BF4 /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 268BD8921D40B7DB00345BF4 /* CTDisplayView.m */; };
+		9ACE183A1D4658D20068A217 /* UIView+frameAdjust.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE18391D4658D20068A217 /* UIView+frameAdjust.m */; };
+		9ACE183F1D46651B0068A217 /* CTFrameParserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE183E1D46651B0068A217 /* CTFrameParserConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,11 @@
 		268BD8841D40B66800345BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		268BD8911D40B7DB00345BF4 /* CTDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDisplayView.h; sourceTree = "<group>"; };
 		268BD8921D40B7DB00345BF4 /* CTDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDisplayView.m; sourceTree = "<group>"; };
+		9A33206F1D46539C0008CCEC /* CoreTextDemo-prifex.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreTextDemo-prifex.pch"; sourceTree = "<group>"; };
+		9ACE18381D4658D20068A217 /* UIView+frameAdjust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frameAdjust.h"; sourceTree = "<group>"; };
+		9ACE18391D4658D20068A217 /* UIView+frameAdjust.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frameAdjust.m"; sourceTree = "<group>"; };
+		9ACE183D1D46651B0068A217 /* CTFrameParserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTFrameParserConfig.h; sourceTree = "<group>"; };
+		9ACE183E1D46651B0068A217 /* CTFrameParserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTFrameParserConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				268BD8741D40B66700345BF4 /* main.m */,
+				9A33206F1D46539C0008CCEC /* CoreTextDemo-prifex.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +125,8 @@
 		268BD88D1D40B75E00345BF4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9ACE183D1D46651B0068A217 /* CTFrameParserConfig.h */,
+				9ACE183E1D46651B0068A217 /* CTFrameParserConfig.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -124,17 +134,10 @@
 		268BD88E1D40B75E00345BF4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				268BD88F1D40B79600345BF4 /* Cell */,
+				9ACE183C1D4664BE0068A217 /* Cell */,
 				268BD8901D40B79600345BF4 /* View */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		268BD88F1D40B79600345BF4 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		268BD8901D40B79600345BF4 /* View */ = {
@@ -142,8 +145,17 @@
 			children = (
 				268BD8911D40B7DB00345BF4 /* CTDisplayView.h */,
 				268BD8921D40B7DB00345BF4 /* CTDisplayView.m */,
+				9ACE18381D4658D20068A217 /* UIView+frameAdjust.h */,
+				9ACE18391D4658D20068A217 /* UIView+frameAdjust.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9ACE183C1D4664BE0068A217 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,8 +230,10 @@
 			files = (
 				268BD87B1D40B66700345BF4 /* ViewController.m in Sources */,
 				268BD8781D40B66700345BF4 /* AppDelegate.m in Sources */,
+				9ACE183A1D4658D20068A217 /* UIView+frameAdjust.m in Sources */,
 				268BD8931D40B7DB00345BF4 /* CTDisplayView.m in Sources */,
 				268BD8751D40B66700345BF4 /* main.m in Sources */,
+				9ACE183F1D46651B0068A217 /* CTFrameParserConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +345,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CoreTextDemo/CoreTextDemo-prifex.pch";
 				INFOPLIST_FILE = CoreTextDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eliteall.com.CoreTextDemo;
@@ -342,6 +358,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CoreTextDemo/CoreTextDemo-prifex.pch";
 				INFOPLIST_FILE = CoreTextDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eliteall.com.CoreTextDemo;
