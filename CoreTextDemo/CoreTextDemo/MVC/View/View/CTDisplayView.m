@@ -7,7 +7,6 @@
 //
 
 #import "CTDisplayView.h"
-#import "CoreText/CoreText.h"
 
 @implementation CTDisplayView
 
@@ -16,7 +15,7 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
-    
+    /*
     //步骤1
     CGContextRef context = UIGraphicsGetCurrentContext();
     
@@ -42,8 +41,16 @@
     CFRelease(frame);
     CFRelease(path);
     CFRelease(framesetter);
+    */
     
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetTextMatrix(context, CGAffineTransformIdentity);
+    CGContextTranslateCTM(context, 0, self.bounds.size.height);
+    CGContextScaleCTM(context, 1.0, -1.0);
     
+    if (self.data) {
+        CTFrameDraw(self.data.ctFrame, context);
+    }
 }
 
 

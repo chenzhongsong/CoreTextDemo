@@ -15,6 +15,8 @@
 		268BD8801D40B66800345BF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268BD87F1D40B66800345BF4 /* Assets.xcassets */; };
 		268BD8831D40B66800345BF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268BD8811D40B66800345BF4 /* LaunchScreen.storyboard */; };
 		268BD8931D40B7DB00345BF4 /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 268BD8921D40B7DB00345BF4 /* CTDisplayView.m */; };
+		26CEF86B1D4709F400A1489B /* CTFrameParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CEF86A1D4709F400A1489B /* CTFrameParser.m */; };
+		26CEF86E1D470A8100A1489B /* CoreTextData.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CEF86D1D470A8100A1489B /* CoreTextData.m */; };
 		9ACE183A1D4658D20068A217 /* UIView+frameAdjust.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE18391D4658D20068A217 /* UIView+frameAdjust.m */; };
 		9ACE183F1D46651B0068A217 /* CTFrameParserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE183E1D46651B0068A217 /* CTFrameParserConfig.m */; };
 /* End PBXBuildFile section */
@@ -33,6 +35,10 @@
 		268BD8841D40B66800345BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		268BD8911D40B7DB00345BF4 /* CTDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDisplayView.h; sourceTree = "<group>"; };
 		268BD8921D40B7DB00345BF4 /* CTDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDisplayView.m; sourceTree = "<group>"; };
+		26CEF8691D4709F400A1489B /* CTFrameParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTFrameParser.h; sourceTree = "<group>"; };
+		26CEF86A1D4709F400A1489B /* CTFrameParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTFrameParser.m; sourceTree = "<group>"; };
+		26CEF86C1D470A8100A1489B /* CoreTextData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextData.h; sourceTree = "<group>"; };
+		26CEF86D1D470A8100A1489B /* CoreTextData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextData.m; sourceTree = "<group>"; };
 		9A33206F1D46539C0008CCEC /* CoreTextDemo-prifex.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreTextDemo-prifex.pch"; sourceTree = "<group>"; };
 		9ACE18381D4658D20068A217 /* UIView+frameAdjust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frameAdjust.h"; sourceTree = "<group>"; };
 		9ACE18391D4658D20068A217 /* UIView+frameAdjust.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frameAdjust.m"; sourceTree = "<group>"; };
@@ -127,6 +133,10 @@
 			children = (
 				9ACE183D1D46651B0068A217 /* CTFrameParserConfig.h */,
 				9ACE183E1D46651B0068A217 /* CTFrameParserConfig.m */,
+				26CEF8691D4709F400A1489B /* CTFrameParser.h */,
+				26CEF86A1D4709F400A1489B /* CTFrameParser.m */,
+				26CEF86C1D470A8100A1489B /* CoreTextData.h */,
+				26CEF86D1D470A8100A1489B /* CoreTextData.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -229,10 +239,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				268BD87B1D40B66700345BF4 /* ViewController.m in Sources */,
+				26CEF86E1D470A8100A1489B /* CoreTextData.m in Sources */,
 				268BD8781D40B66700345BF4 /* AppDelegate.m in Sources */,
 				9ACE183A1D4658D20068A217 /* UIView+frameAdjust.m in Sources */,
 				268BD8931D40B7DB00345BF4 /* CTDisplayView.m in Sources */,
 				268BD8751D40B66700345BF4 /* main.m in Sources */,
+				26CEF86B1D4709F400A1489B /* CTFrameParser.m in Sources */,
 				9ACE183F1D46651B0068A217 /* CTFrameParserConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

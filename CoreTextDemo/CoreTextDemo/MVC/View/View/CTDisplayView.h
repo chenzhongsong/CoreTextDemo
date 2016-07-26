@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CoreTextData.h"
 
 @interface CTDisplayView : UIView
-
+@property (nonatomic, strong) CoreTextData *data;
+@property (nonatomic, assign) CGFloat width;
+@property (nonatomic, assign) CGFloat height;
 @end
