@@ -51,6 +51,9 @@
     if (self.data) {
         CTFrameDraw(self.data.ctFrame, context);
     }
+    
+    
+    
 }
 
 
